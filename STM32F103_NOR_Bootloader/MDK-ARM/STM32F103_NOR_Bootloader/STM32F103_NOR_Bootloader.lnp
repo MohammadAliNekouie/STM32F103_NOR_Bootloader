@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+"stm32f103_nor_bootloader\startup_stm32f103xb.o"
+"stm32f103_nor_bootloader\main.o"
+"stm32f103_nor_bootloader\stm32f1xx_it.o"
+"stm32f103_nor_bootloader\flash.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_gpio.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_spi.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_dma.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_rcc.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_utils.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_exti.o"
+"stm32f103_nor_bootloader\stm32f1xx_ll_pwr.o"
+"stm32f103_nor_bootloader\system_stm32f1xx.o"
+"stm32f103_nor_bootloader\misc.o"
+"stm32f103_nor_bootloader\stm32f10x_flash.o"
+--strict --scatter "STM32F103_NOR_Bootloader\STM32F103_NOR_Bootloader.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32F103_NOR_Bootloader.map" -o STM32F103_NOR_Bootloader\STM32F103_NOR_Bootloader.axf

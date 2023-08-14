@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohammad Ali Nekouie, Tesla Electronic, LIC=DSNXV-PDXXK-ZEAH2-9DRDX-W1ZV9-PSPG3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Embedded Development\STM32F103_NOR_Bootloader\MDK-ARM\STM32F103_NOR_Bootloader.uvprojx
+Project File Date:  08/05/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'STM32F103_NOR_Bootloader'
+assembling startup_stm32f103xb.s...
+compiling Flash.c...
+compiling stm32f1xx_ll_exti.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_ll_pwr.c...
+compiling stm32f1xx_ll_gpio.c...
+compiling stm32f1xx_ll_rcc.c...
+compiling stm32f1xx_ll_dma.c...
+compiling stm32f1xx_ll_utils.c...
+compiling stm32f1xx_ll_spi.c...
+compiling main.c...
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(165): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT"  (declared at line 51 of "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h")
+   #define __MPU_PRESENT             0      /*!< Other STM32 devices does not provide an MPU  */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(167): warning:  #47-D: incompatible redefinition of macro "__CM3_REV"  (declared at line 50 of "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h")
+  #define __CM3_REV                 0x0200  /*!< Core Revision r2p0                           */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(168): warning:  #47-D: incompatible redefinition of macro "__NVIC_PRIO_BITS"  (declared at line 52 of "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h")
+  #define __NVIC_PRIO_BITS          4       /*!< STM32 uses 4 Bits for the Priority Levels    */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(169): warning:  #47-D: incompatible redefinition of macro "__Vendor_SysTickConfig"  (declared at line 53 of "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h")
+  #define __Vendor_SysTickConfig    0       /*!< Set to 1 if different SysTick Config is used */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(178): error:  #101: "NonMaskableInt_IRQn" has already been declared in the current scope
+    NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                             */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(179): error:  #101: "MemoryManagement_IRQn" has already been declared in the current scope
+    MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M3 Memory Management Interrupt              */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(180): error:  #101: "BusFault_IRQn" has already been declared in the current scope
+    BusFault_IRQn               = -11,    /*!< 5 Cortex-M3 Bus Fault Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(181): error:  #101: "UsageFault_IRQn" has already been declared in the current scope
+    UsageFault_IRQn             = -10,    /*!< 6 Cortex-M3 Usage Fault Interrupt                    */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(182): error:  #101: "SVCall_IRQn" has already been declared in the current scope
+    SVCall_IRQn                 = -5,     /*!< 11 Cortex-M3 SV Call Interrupt                       */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(183): error:  #101: "DebugMonitor_IRQn" has already been declared in the current scope
+    DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M3 Debug Monitor Interrupt                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(184): error:  #101: "PendSV_IRQn" has already been declared in the current scope
+    PendSV_IRQn                 = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                       */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(185): error:  #101: "SysTick_IRQn" has already been declared in the current scope
+    SysTick_IRQn                = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                   */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(188): error:  #101: "WWDG_IRQn" has already been declared in the current scope
+    WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                            */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(189): error:  #101: "PVD_IRQn" has already been declared in the current scope
+    PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt            */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(190): error:  #101: "TAMPER_IRQn" has already been declared in the current scope
+    TAMPER_IRQn                 = 2,      /*!< Tamper Interrupt                                     */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(191): error:  #101: "RTC_IRQn" has already been declared in the current scope
+    RTC_IRQn                    = 3,      /*!< RTC global Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(192): error:  #101: "FLASH_IRQn" has already been declared in the current scope
+    FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                               */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(193): error:  #101: "RCC_IRQn" has already been declared in the current scope
+    RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(194): error:  #101: "EXTI0_IRQn" has already been declared in the current scope
+    EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(195): error:  #101: "EXTI1_IRQn" has already been declared in the current scope
+    EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(196): error:  #101: "EXTI2_IRQn" has already been declared in the current scope
+    EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(197): error:  #101: "EXTI3_IRQn" has already been declared in the current scope
+    EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(198): error:  #101: "EXTI4_IRQn" has already been declared in the current scope
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                 */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(199): error:  #101: "DMA1_Channel1_IRQn" has already been declared in the current scope
+    DMA1_Channel1_IRQn          = 11,     /*!< DMA1 Channel 1 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(200): error:  #101: "DMA1_Channel2_IRQn" has already been declared in the current scope
+    DMA1_Channel2_IRQn          = 12,     /*!< DMA1 Channel 2 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(201): error:  #101: "DMA1_Channel3_IRQn" has already been declared in the current scope
+    DMA1_Channel3_IRQn          = 13,     /*!< DMA1 Channel 3 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(202): error:  #101: "DMA1_Channel4_IRQn" has already been declared in the current scope
+    DMA1_Channel4_IRQn          = 14,     /*!< DMA1 Channel 4 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(203): error:  #101: "DMA1_Channel5_IRQn" has already been declared in the current scope
+    DMA1_Channel5_IRQn          = 15,     /*!< DMA1 Channel 5 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(204): error:  #101: "DMA1_Channel6_IRQn" has already been declared in the current scope
+    DMA1_Channel6_IRQn          = 16,     /*!< DMA1 Channel 6 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(205): error:  #101: "DMA1_Channel7_IRQn" has already been declared in the current scope
+    DMA1_Channel7_IRQn          = 17,     /*!< DMA1 Channel 7 global Interrupt                      */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(252): error:  #101: "ADC1_2_IRQn" has already been declared in the current scope
+    ADC1_2_IRQn                 = 18,     /*!< ADC1 and ADC2 global Interrupt                       */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(253): error:  #101: "USB_HP_CAN1_TX_IRQn" has already been declared in the current scope
+    USB_HP_CAN1_TX_IRQn         = 19,     /*!< USB Device High Priority or CAN1 TX Interrupts       */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(254): error:  #101: "USB_LP_CAN1_RX0_IRQn" has already been declared in the current scope
+    USB_LP_CAN1_RX0_IRQn        = 20,     /*!< USB Device Low Priority or CAN1 RX0 Interrupts       */
+C:\Users\man_e\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(255): error:  #101: "CAN1_RX1_IRQn" has already been declared in the current scope
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                   */
+../Core/Src/main.c: 4 warnings, 30 errors
+compiling stm32f1xx_it.c...
+"STM32F103_NOR_Bootloader\STM32F103_NOR_Bootloader.axf" - 30 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32F103_NOR_Bootloader
+  C:/Users/man_e/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/man_e/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

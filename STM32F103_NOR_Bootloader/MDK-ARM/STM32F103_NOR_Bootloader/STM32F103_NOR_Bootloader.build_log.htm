@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohammad Ali Nekouie, Tesla Electronic, LIC=DSNXV-PDXXK-ZEAH2-9DRDX-W1ZV9-PSPG3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.42.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Embedded Development\STM32F103_NOR_Bootloader\STM32F103_NOR_Bootloader\MDK-ARM\STM32F103_NOR_Bootloader.uvprojx
+Project File Date:  08/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'STM32F103_NOR_Bootloader'
+assembling startup_stm32f103xb.s...
+compiling Flash.c...
+compiling stm32f10x_flash.c...
+compiling misc.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_ll_exti.c...
+compiling stm32f1xx_ll_rcc.c...
+compiling stm32f1xx_ll_pwr.c...
+compiling stm32f1xx_ll_dma.c...
+compiling stm32f1xx_ll_gpio.c...
+compiling stm32f1xx_ll_utils.c...
+compiling stm32f1xx_ll_spi.c...
+compiling stm32f1xx_it.c...
+compiling main.c...
+linking...
+Program Size: Code=3552 RO-data=380 RW-data=28 ZI-data=4708  
+FromELF: creating hex file...
+"STM32F103_NOR_Bootloader\STM32F103_NOR_Bootloader.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Flash Version: 3.6.0
+   * Component: Framework Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32F103_NOR_Bootloader
+  C:/Users/man_e/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/man_e/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+  C:/Users/man_e/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Flash:3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_flash.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_flash.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
+      Source file:   Device/StdPeriph_Driver/src/misc.c
+      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
+      Include file:  Device/StdPeriph_Driver/inc/misc.h
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
